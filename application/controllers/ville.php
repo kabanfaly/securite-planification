@@ -1,17 +1,30 @@
-<?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * Description of ville
- *
- * @author kaba
+ * Ville controllers
+ * @author N'faly KABA
+ * @since   05/01/2014
+ * @version 2.0
+ * @copyright KABANFALY
+ * @package plannification
+ * @subpackage application/controllers/
+ * @filesource  ville.php
  */
-class ville
+class Ville extends CI_Controller
 {
-    //put your code here
+    
+    function __construct()
+    {
+        parent::__construct();
+    }
+    public function index(){
+        $header = array(
+            'title' => lang('VILLES_MANAGEMENT')
+        );
+        $this->load->view('header', $header);
+        $this->load->view('ville/index');
+        $this->load->view('footer');
+    }
 }
+
+/* End of file ville.php */
+/* Location: ./application/controllers/ville.php */
