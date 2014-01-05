@@ -12,4 +12,19 @@
 class Agent extends CI_Controller
 {
     
+    function __construct()
+    {
+        parent::__construct();
+    }
+    public function index(){
+        $header = array(
+            'title' => lang('AGENTS_MANAGEMENT')
+        );
+        $this->load->view('header', $header);
+        $this->load->view('agent/index');
+        $this->load->view('footer');
+    }
 }
+
+/* End of file agent.php */
+/* Location: ./application/controllers/agent.php */
