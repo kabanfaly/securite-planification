@@ -1,7 +1,7 @@
 define(['jquery/jquery', 'dataTables/jquery.dataTables.min'], function() {
     $(function() {
 
-        $('#example').dataTable({
+        $('#tableContent').dataTable({
             "aoColumnDefs": [
                 {
                     // `data` refers to the data for the cell (defined by `mData`, which
@@ -32,7 +32,7 @@ define(['jquery/jquery', 'dataTables/jquery.dataTables.min'], function() {
                 "sEmptyTable": "Aucune donnée disponible dans le tableau",
                 "oPaginate": {
                     "sFirst": "Premier",
-                    "sPrevious": "Pr&eacute;c&eacute;dent",
+                        "sPrevious": "Pr&eacute;c&eacute;dent",
                     "sNext": "Suivant",
                     "sLast": "Dernier"
                 },

@@ -19,12 +19,5 @@
                 </ul>
             </div>
             <div id="mainContent">
-                <div id="tabs">
-                    <ul>
-                        <!--<li><a href="#tabs-1">Gestion des agents</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>-->
-                    </ul>
-                    <div id="tabs-1">
-                        <p></p>
-                    </div>
-                </div>
+               
 
