@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url']	= 'http://kaba.dev.net/planification/';
-$config['base_url']	= 'http://localhost/securite-planification/';
+$config['base_url']	= 'http://localhost/planification/';
 
 /*
 |--------------------------------------------------------------------------

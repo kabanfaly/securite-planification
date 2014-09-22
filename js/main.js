@@ -1,6 +1,7 @@
 
 requirejs.config({
     "baseUrl": "js/lib",
+    "urlArgs": "bust=" + (new Date()).getTime(),
     "paths": {
         "modelView" : "../modelView",
         "jquery": "jquery/jquery.min",
