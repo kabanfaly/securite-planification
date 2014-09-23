@@ -2,14 +2,13 @@
     Created on : 14 déc. 2013, 01:06:17
     Author     : kaba
 */
-@import "jquery/jquery-ui.css";
-/*@import "dataTables/jquery.dataTables.css";*/
-/*@import "dataTables/jquery.dataTables_themeroller.css";*/
-/*@import "dataTables/table_jui.css";*/
-@import "bootstrap.min.css";
-@import "bootstrap-theme.min.css";
-@import "dataTables.bootstrap.css";
-/*@import "dataTables/table.css";*/
+@import "../includes/jquery-ui/themes/base/all.css";
+@import "../includes/bootstrap/dist/css/bootstrap.min.css";
+@import "../includes/bootstrap/dist/css/bootstrap-theme.min.css";
+@import "../includes/datatables-bootstrap3/BS3/assets/css/datatables.css";
+/*@import "../includes/metro-ui-css/min/metro-bootstrap.min.css";
+@import "../includes/metro-ui-css/min/metro-responsive.min.css";
+@import "../includes/metro-ui-css/min/iconFont.min.css";*/
 body{
     margin: 50px 2% 0 2%; 
 /*    border: solid 1px #999;

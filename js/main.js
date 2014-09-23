@@ -1,16 +1,17 @@
-
+//baseUrl is define in application/header.php 
 requirejs.config({
-    "baseUrl": "js/lib",
-    "urlArgs": "bust=" + (new Date()).getTime(),
+    "baseUrl": baseUrl+"includes",
+//    "urlArgs": "bust=" + (new Date()).getTime(),
     "paths": {
-        "modelView" : "../modelView",
-        "jquery": "jquery/jquery.min",
-        "jquery-ui": "jquery/jquery-ui.min",
-        "knockout": "knockout/knockout",
-        "bootstrap": "bootstrap/bootstrap.min",
-        "datatables" : "dataTables/jquery.dataTables.min",
-        "datatables.bootstrap" : "bootstrap/dataTables.bootstrap"
+//        "metro":"metro-ui-css/min/metro.min",
+        "modelView" : "../js/modelView",
+        "jquery": "jquery/dist/jquery.min",
+        "jquery-ui": "jquery-ui/jquery-ui.min",
+        "angular": "angular/angular.min",
+        "bootstrap": "bootstrap/dist/js/bootstrap.min",
+        "datatables" : "datatables/media/js/jquery.dataTables.min",
+        "datatables.bootstrap" : "datatables-bootstrap3/BS3/assets/js/datatables"
     }
 });
-require(["knockout", "jquery", "jquery-ui", "datatables",
+require(["jquery", "jquery-ui", "angular", "datatables",
     "bootstrap", "datatables.bootstrap", "modelView"]);
