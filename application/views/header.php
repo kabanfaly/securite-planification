@@ -4,43 +4,35 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $title; ?></title>
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url(); ?>css/style.css" >
-        <?php
-        $url = base_url();
-        echo <<<EOF
-            <script type="text/javascript">
-                var baseUrl = "{$url}";
-            </script>
-EOF;
-        ?>
-        <script type="text/javascript" data-main="<?php echo base_url(); ?>js/main" src="<?php echo base_url(); ?>includes/requirejs/require.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url(); ?>css/style.css" >      
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
-                <!--                <div class="navbar-collapse collapse">
-                                    <form class="navbar-form navbar-right" role="form">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Email" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" placeholder="Password" class="form-control">
-                                        </div>
-                                        <button type="submit" class="btn btn-success">Sign in</button>
-                                    </form>
-                                </div>/.navbar-collapse -->
+                <div class="heading">
+                    <a href="<?php echo base_url(); ?>">
+                        <img width="120" height="40" border="0" title="Planification" alt="Planification" src="<?php echo base_url(); ?>images/logo.png" />
+                    </a>
+                </div>
             </div>
-        </div>
+        </header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 sidebar">
-                        <ul class="nav nav-tabs nav-stacked">
-                            <li class="active"><a href="<?php echo site_url("agent"); ?>"><span id="add_tab">Gestion des agents</span></a></li>
-                            <li><a href="<?php echo site_url("site"); ?>"><span id="add_tab">Gestion des sites</span></a></li>
-                            <li><a href="<?php echo site_url("ville"); ?>"><span id="add_tab">Gestion des ville</span></a></li>
-                        </ul>
+                <div class="col-lg-2">
+                    <div class="list-group col-lg-2 fixed">
+                        <a href="<?php echo site_url("agent"); ?>" class="<?php echo $active == 'agent' ? 'active' : ' ' ?> list-group-item">
+                            <h5 class="list-group-item-heading"><?php echo lang('AGENTS_MANAGEMENT'); ?></h5>
+                        </a>
+                        <a href="<?php echo site_url("site"); ?>" class="<?php echo $active == 'site' ? 'active' : ' ' ?> list-group-item">
+                            <h5 class="list-group-item-heading"><?php echo lang('SITES_MANAGEMENT'); ?></h5>
+                        </a>
+                        <a href="<?php echo site_url("city"); ?>" class="<?php echo $active == 'city' ? 'active' : ' ' ?> list-group-item">
+                            <h5 class="list-group-item-heading"><?php echo lang('CITIES_MANAGEMENT'); ?></h5>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-offset-1 col-lg-9">
+
 
 
 

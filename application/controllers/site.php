@@ -18,7 +18,8 @@ class Site extends CI_Controller
     }
     public function index(){
         $header = array(
-            'title' => lang('SITES_MANAGEMENT')
+            'title' => lang('SITES_MANAGEMENT'),
+            'active' => 'site'
         );
         $this->load->view('header', $header);
         $this->load->view('site/index');

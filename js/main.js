@@ -1,7 +1,7 @@
 //baseUrl is define in application/header.php 
 requirejs.config({
-    "baseUrl": baseUrl+"includes",
-//    "urlArgs": "bust=" + (new Date()).getTime(),
+    "baseUrl": baseUrl+"assets",
+    "urlArgs": "bust=" + (new Date()).getTime(),
     "paths": {
 //        "metro":"metro-ui-css/min/metro.min",
         "modelView" : "../js/modelView",

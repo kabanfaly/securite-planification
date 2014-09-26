@@ -7,9 +7,9 @@
  * @copyright KABANFALY
  * @package plannification
  * @subpackage application/controllers/
- * @filesource  ville.php
+ * @filesource  city.php
  */
-class Ville extends CI_Controller
+class City extends CI_Controller
 {
     
     function __construct()
@@ -18,13 +18,14 @@ class Ville extends CI_Controller
     }
     public function index(){
         $header = array(
-            'title' => lang('VILLES_MANAGEMENT')
+            'title' => lang('CITIES_MANAGEMENT'),
+            'active' => 'city'
         );
         $this->load->view('header', $header);
-        $this->load->view('ville/index');
+        $this->load->view('city/index');
         $this->load->view('footer');
     }
 }
 
-/* End of file ville.php */
-/* Location: ./application/controllers/ville.php */
+/* End of file city.php */
+/* Location: ./application/controllers/city.php */

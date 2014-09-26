@@ -6,7 +6,7 @@ define(["jquery", "jquery-ui", "datatables",
             "bProcessing": true,
             "language":{
                //baseUrl is define in application/header.php 
-               "url": baseUrl+"/includes/datatables-plugins/i18n/French.lang"
+               "url": baseUrl+"assets/datatables-plugins/i18n/French.lang"
             }
         });
     });
