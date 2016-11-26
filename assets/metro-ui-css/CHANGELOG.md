@@ -1,139 +1,171 @@
-## Version 2.0.23
+# Changelog 
 
-### Changes:
-- fix dialog with form for mobile webkit (issue 424)
-- upd nuspec (issue 445)
-- fix memory leak (issue 441)
-- fix docs for incorrect labels (issue 442)
-- fix input control transform email style (issue 444)
+## 3.0.15
+* remove re-init for old browsers
+* METRO_AUTO_REINIT now deprecated
+* add global methods for show/hide charms (showMetroCharm, hideMetroCharm, toggleMetroCharm)
+* fix dropdown closed by document click 
+* add Number.prototype.format
+* fix Metro Icon Font for using with winphone apps
+* upd dialog: add runtime setContent* methods
+* upd charms: resize closer, add close charm by document click
+* upd charms: add position parameter to show charm functions
+* upd charms: add function to check charm is open
+* additional colors moved to metro-colors.css
+* add validator multiple funcs, see validator multi func demo
 
-## Version 2.0.22
+## 3.0.14
+* fix tabcontrol frames overflow
+* upd dialog, add utility function showMetroDialog, hideMetroDialog
+* upd dialog, add place option
+* upd dialog, add set content options
+* upd slider, add work with non input target
+* upd slider, add two way binding with target 
+* upd slider, add new Events: onStartChange, onChanged
+* add video player
+* upd slider, add buffer (great for player)
+* fix esc click for full screen video player with mode window
+* add audio player
+* remove large slider
+* redefine slider
+* fix radio-button checked state
+* rewrite colors.less
+* fix pull request #794
+* fix pull request #796
 
-### Changes:
-- add german locale
-- add spanish locale
-- bug fixed
-- bug added
+## 3.0.13
+* upd treeview for method addLeaf, now method returned li
+* upd bower config
+* init clock plugin
+* fix draggable for preventDefault
+* upd draggable add data-z-index attribute
+* upd f-menu add subclass default-dropdown
+* upd panel remove default padding for panel content
+* add textarea autoresize with max height
+* fix calendar for support const METRO_CURRENT_LOCALE
+* fix tabcontrol frames overflow
+* new font icons (+42)
 
-## Version 2.0.21
+## 3.0.12
+* add color schemes for calendar
+* fix bug in calendar after pull-request 785  
 
-### Changes:
-- upd responsive (container, grid, typography)
-- fix navigation bar > element-menu responsive feature
+## 3.0.11
+* add keypad onChange event
+* chg progressBar animation model
+* fix box sizing for FF
+* chg progressBar role to progress and progress method to set
+* chg tabControl role to tabcontrol
+* add option for auto open dialog
+* fix important bug for multi role defining  
+* add draggable plugin
+* upd dialog for creating wizards in
+* upd calendar with pull request [785](https://github.com/olton/Metro-UI-CSS/pull/785)
 
-## Version 2.0.20
+## 3.0.10
+* fix modern input initialize with value
+* remove alert for check select2 plugin exists
+* add public methods slideTo, nextSlide, priorSlide for carousel
+* fix carousel method slideToSlide if next index eq current 
+* add rtl support for input controls
+* add input range
+* add new preloaders
+* fix slider value method if target is defined
 
-### Changes:
-- add responsive (container, grid, typography)
+## 3.0.9
+* add hotkeys binding
+* fix fluent-menu initialize
 
-## Version 2.0.19
+## 3.0.8
+* upd font declaration add sans-serif
+* add responsive for sidebar
+* add tile factor 1.25 for devices with width <= 800px
+* add hint timeout
+* add hint time delay
+* add hotkeys plugin by [John Resig](https://github.com/jeresig)
+* add noConflict support
+* init RTL support (partial)
+* move all media to standalone file metro-responsive
+* add support for [RequireJS](http://forum.metroui.org.ua/viewtopic.php?pid=614#p614)
+* add charm widget
+* add fluent menu 
+* add color schemes module metro-schemes
+* add color schemes for app-bar
+* add color schemes for v-menu
+* add color schemes for d-menu
+* add color schemes for t-menu
+* add color schemes for sidebar
+* fix min width for sidebar2 item
+* add rotate dropdown-toggle marker
+* add onclick event and touch for tile plugin
+* upd touch support for slider
+* upd event binding model for widgets [Event binding](http://metroui.org.ua/events.html)
 
-### Changes:
-- add dark style for dropdown menu
-- minor bugs fix
+## 3.0.7
+* add padding for container on mobile devices
+* add handler for fitImage for window resize
+* remove important from app-bar
+* add darcula scheme for app-bar
+* add [Animations](http://metroui.org.ua/animations.html), thx to [Meneses Evandro](https://github.com/MenesesEvandro)
+* add [Metro Icon Font Animations](http://metroui.org.ua/font.html), thx to [Meneses Evandro](https://github.com/MenesesEvandro)
+* add colored bullets for lists
+* add new color classes to set color for before and after
+* add flex-grid
+* add f-menu (flex)
+* add full-size (100%) for odd last cells in grid 
+* add template admin panel with sidebar
+* add offset for cells for grid (default and condensed)
 
-## Version 2.0.18
+## 3.0.6
+* add support user defined onsubmit for validator over data-on-submit attribute
+* add light color for nav-button
+* remove outline for nav-button
+* fix square(round, cycle)-button sizes
+* change calendar min-width to 220px or 13.75rem
+* fix class collapsed for treeview leaf
+* add states for select2
+* upd Metro Icon Fonts (added new 33 icons)
+* fix static rating
+* remove min-width for input
+* add states for table rows
 
-### Changes:
-- add light style for sidebar
-- minor bug fix for docs
+## 3.0.5
+* fix triggering for input when clear button clicked
+* fix panel heading style bug
+* New widget [Validator](http://metroui.org.ua/validator.html)
+* fix dropdown.js pull-request 768
+* fix full size for modern input
+* carousel: Added duration based timeout to next/prev event 
+* upd tabcontrol docs
+* fix drop shadow for menu for ie9
+* fix appbar dropdown toggle for ie
+* upd treeview for value for check and radio
+ 
+## 3.0.4
+* New widget [Keypad](http://metroui.org.ua/keypad.html)
+* fixed float for dataTables
+* return from v2 breadcrumbs type
+* add maxDate for calendar widget
+* fixed set value method for rating
+* upd demo for rating
+* upd calendar, add pre-stored days
+* upd datepicker for pre-stored days
+* add flexible to appbar by [Daniel Milbrandt](http://xiphe.com)
 
-### Changes:
-- remove !important from colors classes
-- add new colors bg(fg)-hover-*, bg(fg)-active-* and bg(fg)-focus-*
-- fix METRO_WEEK_START for datepicker
+## 3.0.3
+* New widget [Presenter](http://metroui.org.ua/presenter.html)
+* Datepicker - Triggered change event when date is changed. [#761](https://github.com/olton/Metro-UI-CSS/pull/761)
+* upd demo for table
+* upd demo for menus
+* fix small bugs
 
-## Version 2.0.16
+## 3.0.2
+* Optimize important use
+* Alignment version for bower and nuget
 
-### Changes:
-- add pause and resume the animations for live tiles
+## 3.0.1
+* Create package for Nuget
 
-## Version 2.0.15
-
-### Changes:
-- add chinese language to calendar and datepicker (By NoGrief)
-
-## Version 2.0.14
-
-### Changes:
-- fix issue 406 (data-transform)
-
-## Version 2.0.13
-
-### Changes:
-- add global param METRO_WEEK_START (to set calendar week start: 0 - Sunday (default), 1 - Monday)
-- fix show Notify when body no have class .metro
-
-## Version 2.0.12
-
-### Changes:
-- upd datepicker for support calendar features
-
-## Version 2.0.11
-
-### Changes:
-- add start from monday for calendar
-- add show other days for calendar
-
-## Version 2.0.10
-
-### Changes:
-- add langs to calendar: en, fr, ua, ru
-
-## Version 2.0.9
-
-### Changes:
-- bugs fix
-- add locale support to calendar, datepicker and Date.format (to global set METRO_LOCALE = 'en' or 'ru', or use data-locale attribute)
-
-## Version 2.0.8
-
-### Changes:
-- bugs fix
-- add notices
-
-## Version 2.0.7
-
-### Changes:
-- fix color error in treeview
-- add minfied js in one file: metro.min.js
-
-## Version 2.0.6
-
-### Changes:
-- upd treeview, add events for collapse and expand node
-
-## Version 2.0.5
-
-### Changes:
-- init scroll bar component (prototype)
-- upd treeview
-- fix bugs
-
-## Version 2.0.4
-
-### Changes:
-- change dropdown menu default style
-- add dropdown menu inverse style
-- fix any bugs
-
-## Version 2.0.3
-
-### Changes:
-- fix any bugs
-
-## Version 2.0.2
-
-### Changes:
-- fixed minor bugs
-- new component streamer (prototype)
-
-## Version 2.0.1
-
-### Changes:
-- change buttons.less > button:active for remove dead zone tearly text in button
-- added new method value to slider
-
-### Limitation:
-- no responsive module (only prototype)
-- no tiles drag feature
+## 3.0.0
+* Stop version 2.x and Start Metro UI CSS v3
+* Register package for Bower
